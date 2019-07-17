@@ -7,6 +7,7 @@ package main
 import (
 	"log"
 	"net"
+
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 	pb "wz.com/server/grpc/controller"
@@ -16,7 +17,7 @@ const (
 	PORT = ":50001"
 )
 
-type server struct {}
+type server struct{}
 
 func (s *server) SayHello(ctx context.Context, in *pb.HelloRequest) (*pb.HelloReply, error) {
 	log.Println("request: ", in.Name)

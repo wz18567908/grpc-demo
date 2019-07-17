@@ -7,9 +7,10 @@ package main
 import (
 	"log"
 	"os"
-                "golang.org/x/net/context"
-                        "google.golang.org/grpc"
-                                pb "wz.com/server/grpc/controller"
+
+	"golang.org/x/net/context"
+	"google.golang.org/grpc"
+	pb "wz.com/server/grpc/controller"
 )
 
 const (
